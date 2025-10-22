@@ -1,0 +1,156 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #fff7f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff8fab;
+  padding: 10px 30px;
+  color: white;
+}
+/* Navbar Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+}
+
+.logo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.navbar nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+.navbar .socials img {
+  width: 20px;
+  margin: 0 5px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background: linear-gradient(to right, #ffe3ec, #fff7f9);
+}
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+.hero-text h1 {
+  color: #ff4d6d;
+  font-size: 28px;
+}
+.hero-text p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.btn {
+  background-color: #ff4d6d;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+}
+.btn:hover {
+  background-color: #ff6f91;
+}
+.hero-img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+}
+
+/* About */
+.about {
+  text-align: center;
+  padding: 40px 20px;
+}
+.about h2 {
+  color: #ff4d6d;
+}
+
+/* Services */
+.services {
+  text-align: center;
+  background-color: #ffe3ec;
+  padding: 50px 20px;
+}
+.service-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.service {
+  background-color: white;
+  border-radius: 15px;
+  width: 250px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.service h3 {
+  color: #ff4d6d;
+}
+
+/* Gallery */
+.gallery {
+  text-align: center;
+  padding: 50px 20px;
+}
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.gallery-grid img {
+  border-radius: 10px;
+  width: 230px;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff0f3;
+}
+.contact h2 {
+  color: #ff4d6d;
+}
+
+/* Footer */
+footer {
+  background-color: #ff8fab;
+  text-align: center;
+  color: white;
+  padding: 15px;
+}
