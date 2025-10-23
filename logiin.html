@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Luvéa Salon</title>
+  <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Luvéa Salon</h1>
+    <nav>
+      <a href="booking_form.html">Booking</a>
+      <a href="logiin.html" class="active">Login</a>
+      <a href="LuvéaSalon.html" class="active">luveasalon</a>
+      
+    </nav>
+  </header>
+
+  <section class="login-section">
+    <h2>Login ke Luvéa Salon</h2>
+    <form id="loginForm">
+      <label>Username:</label><br>
+      <input type="text" id="username" placeholder="Masukkan username"><br><br>
+
+      <label>Password:</label><br>
+      <input type="password" id="password" placeholder="Masukkan password"><br><br>
+
+      <button type="submit">Masuk</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Luvéa Salon</p>
+  </footer>
+
+  <script>
+    // Login sederhana dengan JavaScript
+    document.getElementById("loginForm").addEventListener("submit", function(event){
+      event.preventDefault();
+
+      // Username & password default
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      if(username === "luvea" && password === "123"){
+        alert("Login berhasil! Selamat datang di Luvéa Salon 💖");
+        window.location.href = "index.html"; // diarahkan ke halaman utama
+      } else {
+        alert("Username atau password salah. Coba lagi!");
+      }
+    });
+  </script>
+</body>
+</html>
